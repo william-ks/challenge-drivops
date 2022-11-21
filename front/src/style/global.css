@@ -92,6 +92,7 @@ button.inactive {
 
 main.styled {
   width: 100%;
+  height: 100%,
   padding-top: 50px;
   min-height: 100vh;
   background-color: #111927;
