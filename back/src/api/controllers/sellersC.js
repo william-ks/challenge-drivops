@@ -1,26 +1,15 @@
 const db = require("../../database/dbConect");
 
 const create = async (req, res) => {
-  const { name, registration } = req.body;
+  const { name } = req.body;
 
-  if (!name || !registration) {
+  if (!name) {
     return res.status(400).json({ message: "All fields are mandatory." });
   }
 
   try {
-    // validating registration
-    const response = await db("sellers")
-      .where({ registration })
-      .andWhere({ isDeleted: false });
-
-    if (response.length >= 1) {
-      return res
-        .status(400)
-        .json({ message: "This registration already exists." });
-    }
-
     // creating a new seller
-    await db("sellers").insert({ name, registration });
+    await db("sellers").insert({ name });
 
     return res.status(201).end();
   } catch (e) {
