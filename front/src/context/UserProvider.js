@@ -26,6 +26,7 @@ export function UserProvider({ children }) {
     user,
     headers,
     login,
+    token
   };
 
   return <UserContext.Provider value={data}>{children}</UserContext.Provider>;
