@@ -14,10 +14,7 @@ export function SalesProvider({ children }) {
       const { data } = await api.get("/sales", { headers });
       setSales([...data]);
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -27,10 +24,7 @@ export function SalesProvider({ children }) {
 
       await readSales();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -40,10 +34,7 @@ export function SalesProvider({ children }) {
 
       await readSales();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -53,10 +44,7 @@ export function SalesProvider({ children }) {
 
       await readSales();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
