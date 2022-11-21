@@ -1,0 +1,12 @@
+PORT=3001
+JWT_PASS='senhamuitoforte123'
+DB_HOST='localhost'
+DB_PORT='5432'
+DB_USER='postgres'
+DB_PASS='root'
+DB_NAME='challenge'
+BUCKET='challenge-enterprise'
+KEY_ID='00449a9bf15799a0000000003'
+APP_KEY='K004VvM7CdSGWCVA/mzbFfCDUrb1R+s'
+ENDPOINT_S3='s3.us-west-004.backblazeb2.com'
+
