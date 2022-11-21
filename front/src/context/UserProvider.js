@@ -18,10 +18,7 @@ export function UserProvider({ children }) {
       setUser({ name: data.name });
       setToken(data.token);
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
