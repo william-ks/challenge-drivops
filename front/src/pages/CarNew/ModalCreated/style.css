@@ -1,0 +1,43 @@
+.ModalCreated {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.ModalCreated .modalBox {
+  background-color: white;
+  width: clamp(250px, 100%, 500px);
+  border-radius: 6px;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ModalCreated .modalTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #32323b;
+  margin: 32px 0 8px;
+}
+
+.ModalCreated .modalText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858585;
+  margin-bottom: 24px;
+}
+
+.ModalCreated .modalButton {
+  font-size: 16px;
+  font-weight: 700;
+}

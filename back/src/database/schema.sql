@@ -1,0 +1,40 @@
+CREATE DATABASE challenge;
+
+CREATE TABLE IF NOT EXISTS managers(
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    pass TEXT NOT NULL
+);
+
+DROP TABLE IF EXISTS sales;
+DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS sellers;
+
+CREATE TABLE IF NOT EXISTS sellers(
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    registration INTEGER NOT NULL,
+    "isDeleted" BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE TABLE IF NOT EXISTS cars(
+    id SERIAL PRIMARY KEY,
+    license_plate VARCHAR(7) NOT NULL,
+    brand TEXT NOT NULL,
+    model TEXT NOT NULL,
+  	year TEXT NOT NULL,
+    value INTEGER NOT NULL,
+    image TEXT NOT NULL,
+    image_path TEXT NOT NULL,
+    "isDeleted" BOOLEAN NOT NULL DEFAULT FALSE,
+    "isSold" BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE TABLE IF NOT EXISTS sales(
+    id SERIAl PRIMARY KEY,
+    car_id INTEGER NOT NULL REFERENCES cars(id),
+    seller_id INTEGER NOT NULL REFERENCES sellers(id),
+    date DATE NOT NULL DEFAULT NOW(),
+    "isDeleted" BOOLEAN NOT NULL DEFAULT FALSE
+);

@@ -1,0 +1,71 @@
+.sellerCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 20px;
+  transition: box-shadow 0.19s ease-in-out;
+}
+
+.group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.sellerCard:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sellerCard:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+.sellerCard:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+.sellerCard:hover {
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.flexi{
+  display: grid;
+  grid-template-columns: 35% auto auto auto;
+  gap: 5%;
+  width: 100%;
+}
+
+.icon img{
+  width: 100%;
+  height: 100%;
+}
+
+.noStyle {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

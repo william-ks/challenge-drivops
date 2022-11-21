@@ -1,0 +1,58 @@
+.sellerCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.267);
+  padding: 20px;
+  transition: box-shadow 0.19s ease-in-out;
+}
+
+.group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.sellerCard:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sellerCard:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+.sellerCard:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+.sellerCard:hover {
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noStyle {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

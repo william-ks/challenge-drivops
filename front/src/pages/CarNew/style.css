@@ -1,0 +1,172 @@
+.productNew > .center {
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+.productNew .mainBox{
+  padding: 45px 2% 10px 2%;
+  min-height: calc(100vh - 200px);
+}
+
+.productNew .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.productNew .inputPrice {
+  padding: 0 !important;
+  padding-left: 32px !important;
+  padding-right: 5px !important;
+}
+
+.productNew .priceFill {
+  position: absolute;
+  left: 10px;
+  top: calc(100% - 34px);
+  color: gray;
+}
+
+.productNew .form {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productNew .w100 {
+  width: 100%;
+}
+
+.productNew .w70 {
+  width: 70%;
+  min-width: 228px;
+}
+
+.productNew .twoColuns {
+  display: flex;
+  gap: 2%;
+}
+
+
+.productNew .textCounter {
+  color: #858585;
+  font-size: 13px;
+  font-weight: 400;
+  display: inline;
+}
+
+.productNew .form label.relative {
+  position: relative;
+}
+
+.productNew .form label.relative .inputs {
+  padding-right: 55px;
+}
+
+.productNew .form .w100 label:first-of-type .textCounter {
+  margin-top: 40px;
+}
+
+.fmax {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.productNew .textCounter.in {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.productNew .textCounter.out {
+  position: relative;
+  left: calc(100% - 50px);
+}
+
+.productNew .fileLabel {
+  margin-top: 3px;
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  background-color: rgb(20 20 25 / 0%);
+  border: 1px solid #6e6e746c;
+  box-shadow: 0 5px 10px #00000014;
+  border-radius: 6px;
+}
+
+.productNew .inputFile {
+  display: none;
+}
+
+.productNew .icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.removeImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #f3f3f3;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeImage svg {
+  width: 25px;
+  height: 25px;
+}
+
+.productNew .image {
+  width: 100%;
+  height: 100%;
+}
+
+.productNew .buttons {
+  margin-top: 15px;
+  max-width: 500px;
+  padding: 15px 0 25px 0;
+  display: flex;
+  gap: 2%;
+}
+
+@media screen and (max-width: 750px) {
+  .productNew .twoColuns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .productNew .w70 {
+    width: 100%;
+  }
+
+  .productNew .twoColuns50 {
+    width: 100%;
+    gap: 10%;
+  }
+
+  .productNew .inputFileDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

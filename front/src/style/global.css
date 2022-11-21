@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #11192700; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 208, 218); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(56, 160, 163); /* color of the scroll thumb */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: rgb(230, 234, 238);
+  background-color: rgb(20, 20, 25);
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  height: 45px;
+  border-radius: 8px;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 100;
+
+  background-color: rgba(35, 35, 44, 0.75);
+  border-color: rgb(140, 140, 187);
+  color: rgb(230, 234, 238);
+}
+
+label {
+  width: 100%;
+}
+
+button {
+  width: clamp(100px, 60%, 300px);
+  background-color: rgba(35, 35, 44, 0.75);
+  border-bottom: 4px solid rgba(64, 64, 80, 0.75);
+  color: aliceblue;
+  font-size: 0.9rem;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.205);
+  padding: 0 12px;
+  cursor: pointer;
+  margin: 10px;
+
+  transition: border-color 0.2s ease-in-out;
+}
+
+button:not(.inactive):hover {
+  position: relative;
+  border-color: rgb(42, 170, 177);
+}
+
+button:not(.inactive):active {
+  transform: scale(0.96);
+}
+
+button.inactive {
+  cursor: not-allowed;
+}
+
+main.styled {
+  width: 100%;
+  padding-top: 50px;
+  min-height: 100vh;
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 50% 50%,
+      hsl(182.55, 90%, 51%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+
+.center {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
