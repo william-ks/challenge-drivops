@@ -14,10 +14,7 @@ export function SellersProvider({ children }) {
       const { data } = await api.get("/seller", { headers });
       setSellers([...data]);
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -27,10 +24,7 @@ export function SellersProvider({ children }) {
 
       await readSellers();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -40,10 +34,7 @@ export function SellersProvider({ children }) {
 
       await readSellers();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -53,10 +44,7 @@ export function SellersProvider({ children }) {
 
       await readSellers();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
