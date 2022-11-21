@@ -14,7 +14,6 @@ DROP TABLE IF EXISTS sellers;
 CREATE TABLE IF NOT EXISTS sellers(
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
-    registration INTEGER NOT NULL,
     "isDeleted" BOOLEAN NOT NULL DEFAULT FALSE
 );
 
