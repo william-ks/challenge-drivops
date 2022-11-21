@@ -3,12 +3,15 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import MainRoutes from "./routes";
 import "./style/global.css";
+import { UserProvider } from "./context/UserProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MainRoutes />
+      <UserProvider>
+        <MainRoutes />
+      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
