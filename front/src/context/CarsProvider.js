@@ -23,10 +23,7 @@ export function CarsProvider({ children }) {
 
       setCars([...local]);
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -63,10 +60,7 @@ export function CarsProvider({ children }) {
 
       await readCars();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -83,10 +77,7 @@ export function CarsProvider({ children }) {
 
       await readCars();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
@@ -96,10 +87,7 @@ export function CarsProvider({ children }) {
 
       await readCars();
     } catch (e) {
-      return {
-        status: e.response.status,
-        ...e.response.data,
-      };
+      throw e;
     }
   };
 
